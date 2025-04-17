@@ -1,5 +1,4 @@
 ﻿numpy==2.2.4
-ta-lib
 fastapi
 uvicorn
 tradingview_ta
