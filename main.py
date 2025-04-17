@@ -1,13 +1,12 @@
 from fastapi import FastAPI
 import uvicorn
-import os
 
 app = FastAPI()
 
 @app.get("/")
-def read_root():
-    return {"message": "Hello, World from FastAPI"}
+def root():
+    return {"message": "API is live on Railway"}
 
+# This block is only for local testing
 if _name_ == "_main_":
-    port = int(os.environ.get("PORT", 8000))  # Railway sets PORT
-    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=False)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000)
