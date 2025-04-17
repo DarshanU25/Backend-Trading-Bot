@@ -1,6 +1,0 @@
-﻿numpy==2.2.4
-fastapi
-uvicorn
-tradingview_ta
-yfinance
-pandas
