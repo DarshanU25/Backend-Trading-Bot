@@ -8,5 +8,5 @@ def root():
     return {"message": "API is live on Railway"}
 
 # This block is only for local testing
-if _name_ == "_main_":
+if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000)
